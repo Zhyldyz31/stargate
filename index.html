@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGATE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="activePlayersContainer">
+       <input type="text" id="activePlayersInput" value="0" >
+       <button id="setActivePl">Set number of players</button>
+  </div>  
+  <div id="timerSetup">
+   <label for="gameDuration">Set game duration (minutes):</label>
+   <input type="number" id="gameDuration" min="1" placeholder="Enter minutes">
+   <button onclick="startGame()">Start Game</button>
+</div>
+<div id="gameTimer">
+   Time left: <span id="timeLeft">00:00</span>
+</div>
+
+    <div id="players_data">
+       <div class="player_data">
+         <div id="player1">
+            <h3 id="player1Name">Player 1</h3>
+            <input id="input1" label="Enter name" placeholder="Enter name">
+            <input id="inputWS1" placeholder="Water supply">
+            <button id="button1">Set Name</button>
+            <button id="buttonWS1">Set Water Supply</button>
+            <div id="waterSupply1"> 
+                <img id="img1" src="Assets/Assets/Water.png">
+                <p id="wsValue1">6</p><span class="markText">Water Supply</span>
+         </div>
+         <div id="actionsRemaining">
+            <img id="actionsRem" src="Assets/Assets/Action Points.png">
+            <p id="actRemText1">6</p><span class="markText">actions remaining</span>
+         </div>
+       </div>
+       <div id="player2">
+        <h3 id="player2Name">Player 2</h3>
+        <input id="input2" label="Enter name" placeholder="Enter name">
+        <input id="inputWS2" placeholder="Water supply">
+        <button id="button2">Set Name</button>
+        <button id="buttonWS2">Set Water Supply</button>
+        <div id="waterSupply2"> 
+            <img id="img2" src="Assets/Assets/Water.png">
+            <p id="wsValue2">6</p><span class="markText">Water Supply</span>
+     </div>
+     <div id="actionsRemaining2">
+        <img id="actionsRem2" src="Assets/Assets/Action Points.png">
+        <p id="actRemText2">6</p> <span class="markText">actions remaining</span>
+     </div>
+   </div>
+   <div id="player3">
+    <h3 id="player3Name">Player 3</h3>
+    <input id="input3" label="Enter name" placeholder="Enter name">
+    <input id="inputWS3" placeholder="Water supply">
+    <button id="button3">Set Name</button>
+    <button id="buttonWS3">Set Water Supply</button>
+    <div id="waterSupply3"> 
+        <img id="img3" src="Assets/Assets/Water.png">
+        <p id="wsValue3">6</p><span class="markText">Water Supply</span>
+ </div>
+ <div id="actionsRemaining3">
+    <img id="actionsRem3" src="Assets/Assets/Action Points.png">
+    <p id="actRemText3">6</p> <span class="markText">actions remaining</span>
+ </div>
+</div>
+<div id="player4">
+  <h3 id="player4Name">Player 4</h3>
+  <input id="input4" label="Enter name" placeholder="Enter name">
+  <input id="inputWS4" placeholder="Water supply">
+  <button id="button4">Set Name</button>
+  <button id="buttonWS4">Set Water Supply</button>
+  <div id="waterSupply4"> 
+      <img id="img4" src="Assets/Assets/Water.png">
+      <p id="wsValue4">6</p><span class="markText">Water Supply</span>
+</div>
+<div id="actionsRemaining4">
+  <img id="actionsRem4" src="Assets/Assets/Action Points.png">
+  <p id="actRemText4">6</p> <span class="markText">actions remaining</span>
+</div>
+</div>
+    </div> 
+   <div id="gridContainer">
+    <table id="tableGrid"></table>
+   </div>
+ 
+</body>
+<script src="script2.js"></script>
+</html>
